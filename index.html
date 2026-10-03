@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PUR-RFP2026.09.10071 scripted reporting assistant — 92 Logics prototype</title>
+  <meta name="description" content="Offline 92 Logics prototype. Scripted notes on the City of San José AI reporting solicitation. Not an official city system and not a bid.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="banner">92 Logics prototype · not an official City of San José system · not a bid or proposal</div>
+  <main class="wrap">
+    <header class="top">
+      <p class="kicker">92 Logics · Islamabad · scripted demo</p>
+      <h1>San José AI reporting notice, as a scripted assistant</h1>
+      <p class="lede">A local question-and-answer page for solicitation PUR-RFP2026.09.10071. Every answer is prewritten from public pages fetched on 3 October 2026. It does not log into Biddingo, call an AI API, or fill in missing city figures.</p>
+    </header>
+
+    <div class="grid">
+      <aside class="card facts" aria-label="Notice facts">
+        <h2>Notice card</h2>
+        <dl>
+          <div class="fact">
+            <dt>Buyer</dt>
+            <dd>City of San José, Purchasing (Finance Department)</dd>
+          </div>
+          <div class="fact">
+            <dt>Number</dt>
+            <dd>PUR-RFP2026.09.10071</dd>
+          </div>
+          <div class="fact">
+            <dt>Title on fetched pages</dt>
+            <dd>AI Reporting Tool (quoted overview) and AI Reporting Services (aggregator titles)</dd>
+          </div>
+          <div class="fact">
+            <dt>Close, quoted text</dt>
+            <dd>22 Oct 2026, 12:00 p.m. Pacific (12:00 a.m. PKT, 23 Oct 2026)</dd>
+          </div>
+          <div class="fact">
+            <dt>Where to submit</dt>
+            <dd><a href="https://www.biddingo.com/sanjose">biddingo.com/sanjose</a></dd>
+          </div>
+          <div class="fact">
+            <dt>Buyer email</dt>
+            <dd>None verified <span class="tag">not in fetched pages</span></dd>
+          </div>
+          <div class="fact">
+            <dt>Statement of work</dt>
+            <dd>Not in the pages that loaded <span class="tag">packet unread</span></dd>
+          </div>
+          <div class="fact">
+            <dt>This page</dt>
+            <dd>Prototype only <span class="tag ok">scripted, offline</span></dd>
+          </div>
+        </dl>
+      </aside>
+
+      <section class="card chat" aria-label="Scripted assistant">
+        <div class="chat-head">
+          <h2>Reporting assistant</h2>
+          <p>Prompts run a local script. There is no model behind the box.</p>
+        </div>
+        <div id="log" class="log" role="log" aria-live="polite"></div>
+        <div class="composer">
+          <div id="chips" class="chips"></div>
+          <form id="ask" class="row">
+            <label class="visually-hidden" for="q" style="position:absolute;left:-9999px">Ask about the fetched notice</label>
+            <input id="q" type="text" name="q" autocomplete="off" placeholder="Ask about the fetched notice text">
+            <button class="send" type="submit">Ask</button>
+            <button class="clear" id="clear" type="button">Reset</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <section class="card note">
+      <p><strong>How to read a number.</strong> If a figure was not printed on a page fetched for this demo, the assistant marks it as a placeholder. Do not treat Scout’s body-worn-camera paragraph, CLEATUS’s “Sarah Yanez” line, or contact@example.gov as confirmed city facts. The City’s AI inventory and the closed 2025 generative-AI chatbot item are context only. They are not the scope of this number.</p>
+    </section>
+
+    <footer>Prototype by 92 Logics · cowork@92logics.com · not an official city system.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
